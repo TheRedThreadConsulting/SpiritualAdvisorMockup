@@ -1,0 +1,206 @@
+<html class="dark"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#4211d4",
+            "background-light": "#f6f6f8",
+            "background-dark": "#0a0812",
+            "accent": "#b8a3ff",
+          },
+          fontFamily: {
+            "display": ["Newsreader", "serif"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 selection:bg-primary/30">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-x-hidden">
+<!-- Navigation -->
+<header class="fixed top-0 z-50 w-full border-b border-primary/10 bg-background-dark/80 backdrop-blur-md px-6 md:px-20 py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">flare</span>
+</div>
+<h2 class="text-xl font-bold tracking-tight text-slate-100">Sacred Guidance</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-slate-300 hover:text-primary transition-colors text-sm font-medium" href="#">The Journey</a>
+<a class="text-slate-300 hover:text-primary transition-colors text-sm font-medium" href="#">Modern Alchemy</a>
+<a class="text-slate-300 hover:text-primary transition-colors text-sm font-medium" href="#">Services</a>
+<a class="text-slate-300 hover:text-primary transition-colors text-sm font-medium" href="#">Testimonials</a>
+</nav>
+<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all shadow-lg shadow-primary/20">
+          Book a Consultation
+        </button>
+</div>
+</header>
+<main class="flex-1 pt-24">
+<!-- Hero Section -->
+<section class="relative px-6 md:px-20 py-12 md:py-24 overflow-hidden">
+<!-- Celestial Background Detail -->
+<div class="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(circle_at_50%_50%,#4211d4_0%,transparent_50%)]"></div>
+<div class="absolute top-20 right-10 opacity-10">
+<span class="material-symbols-outlined text-[300px] text-primary rotate-12">auto_awesome</span>
+</div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+<div class="flex flex-col gap-8 order-2 lg:order-1">
+<div class="space-y-4">
+<span class="text-primary font-semibold tracking-widest uppercase text-xs">A Path to Clarity</span>
+<h1 class="text-5xl md:text-7xl font-bold leading-[1.1] text-slate-100 italic">
+                Ancient Wisdom for Modern Paths
+              </h1>
+<p class="text-lg md:text-xl text-slate-400 max-w-lg leading-relaxed">
+                Grounded spiritual mentorship for high-achievers seeking clarity, purpose, and deep energetic alignment.
+              </p>
+</div>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-full text-lg font-bold transition-all shadow-xl shadow-primary/30 flex items-center gap-2">
+                Begin Your Journey
+                <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary/20 rounded-2xl blur-2xl group-hover:bg-primary/30 transition-all"></div>
+<div class="relative aspect-[4/5] w-full rounded-2xl overflow-hidden border border-primary/20 bg-primary/5 shadow-2xl">
+<img alt="Spiritual Advisor Portrait" class="w-full h-full object-cover grayscale-[20%] contrast-[1.1] hover:scale-105 transition-transform duration-700" data-alt="Professional soulful portrait of a wise woman spiritual advisor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgHlgt2Os4y7_fzoM84Clfi7MKWzH-5aj269voJtZr0fL2jCItssvBCGA2N8-f9XWNuBVK7rkV5i3GNXsCtfUnebzdOGMZxAWU6N2WFWcqM9eQu9VRJD7H26-Rn84enm0iiVybJUzZcvn-5Q53F1JZxWts_avcpEy8VbsGOeCqhLUYyq8UPfNOVa_ShT7s8jImackQsSEqHVxwi8hPJ_E335fe9XJt08AwsLTG_ex1kXqagBHOKeXYdeEoc4h6fGHdhZ_P931WPZA"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Philosophy / Modern Alchemy -->
+<section class="px-6 md:px-20 py-24 bg-primary/5">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16 max-w-2xl">
+<h2 class="text-primary font-semibold tracking-widest uppercase text-xs mb-4">The Philosophy</h2>
+<h3 class="text-4xl md:text-5xl font-bold text-slate-100 mb-6 italic">Modern Alchemy</h3>
+<p class="text-slate-400 text-lg leading-relaxed">
+              Timeless spiritual principles meet the demands of modern living. We don't retreat from the world; we master our presence within it.
+            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group p-8 rounded-2xl border border-primary/10 bg-background-dark/50 hover:border-primary/40 transition-all hover:-translate-y-2">
+<div class="mb-6 inline-flex items-center justify-center size-14 rounded-xl bg-primary/20 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">psychology</span>
+</div>
+<h4 class="text-xl font-bold text-slate-100 mb-4">Intuitive Strategy</h4>
+<p class="text-slate-400 leading-relaxed text-sm">
+                Navigate complex executive decisions with profound inner clarity and refined intuitive precision.
+              </p>
+</div>
+<div class="group p-8 rounded-2xl border border-primary/10 bg-background-dark/50 hover:border-primary/40 transition-all hover:-translate-y-2">
+<div class="mb-6 inline-flex items-center justify-center size-14 rounded-xl bg-primary/20 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">energy_savings_leaf</span>
+</div>
+<h4 class="text-xl font-bold text-slate-100 mb-4">Energetic Alignment</h4>
+<p class="text-slate-400 leading-relaxed text-sm">
+                Align your personal frequency with your highest professional and personal goals for effortless flow.
+              </p>
+</div>
+<div class="group p-8 rounded-2xl border border-primary/10 bg-background-dark/50 hover:border-primary/40 transition-all hover:-translate-y-2">
+<div class="mb-6 inline-flex items-center justify-center size-14 rounded-xl bg-primary/20 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">auto_fix_high</span>
+</div>
+<h4 class="text-xl font-bold text-slate-100 mb-4">Sacred Ritual</h4>
+<p class="text-slate-400 leading-relaxed text-sm">
+                Integration of practical tools and daily transformation techniques designed for high-impact lives.
+              </p>
+</div>
+</div>
+</div>
+</section>
+<!-- The Journey (About) -->
+<section class="px-6 md:px-20 py-24">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
+<div class="w-full lg:w-1/2">
+<div class="relative">
+<div class="absolute -top-10 -left-10 opacity-10">
+<span class="material-symbols-outlined text-[120px] text-primary">filter_vintage</span>
+</div>
+<div class="rounded-2xl overflow-hidden aspect-video lg:aspect-square border border-primary/20">
+<div class="w-full h-full bg-cover bg-center" data-alt="Mystical candlelit sacred space for meditation and guidance" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDGSbSyo-zdDj_DWAzleMlX4SOlhNUpASs3gOcgG-V4QLQo4pRmO-pLkOnb0v5kWUOM_JpE8Xwhyg16S75XGNca4MG7JbipKWxfMoBLJ0X_hOM_MQ_wUniD4LaRMaK8X7TCKS3jO3Ed-I5B3vYMZXhwH29VIGjhaD8-dGF3oOdZVG65ypkD6GjL4bj7Rsq8Chngj76JJiMawibwftpuGGhC5e0m_ctAYR8fg_QGmefJGGfm3FTo5soau6TGhX8ZjNO8gmDM9b9881c");'></div>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-1/2 flex flex-col gap-6">
+<h2 class="text-primary font-semibold tracking-widest uppercase text-xs">About</h2>
+<h3 class="text-4xl font-bold text-slate-100 italic leading-tight">Your Guide Through the Threshold</h3>
+<p class="text-slate-400 leading-relaxed text-lg">
+              With over fifteen years of experience blending ancestral wisdom with modern psychological frameworks, I provide a bespoke container for your spiritual evolution.
+            </p>
+<p class="text-slate-400 leading-relaxed">
+              This is not just coaching—it's alchemy. We work with the subtle fields of influence that govern your leadership, your relationships, and your legacy.
+            </p>
+<div class="pt-4">
+<a class="inline-flex items-center gap-2 text-primary font-bold border-b border-primary/40 hover:border-primary transition-all pb-1" href="#">
+                Explore the process
+                <span class="material-symbols-outlined">north_east</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Teaser -->
+<section class="px-6 md:px-20 py-12">
+<div class="max-w-7xl mx-auto bg-primary/10 border border-primary/20 rounded-3xl p-8 md:p-16 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="flex flex-col gap-2">
+<h4 class="text-2xl font-bold text-slate-100 italic">Ready to transcend the ordinary?</h4>
+<p class="text-slate-400">Applications for the Autumn Private Mentorship are now open.</p>
+</div>
+<button class="whitespace-nowrap bg-primary text-white px-10 py-4 rounded-full font-bold shadow-lg shadow-primary/30 hover:bg-primary/90 transition-all">
+            Inquire Today
+          </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="border-t border-primary/10 px-6 md:px-20 py-12 mt-12 bg-background-dark">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2 space-y-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">flare</span>
+<span class="text-xl font-bold text-slate-100">Sacred Guidance</span>
+</div>
+<p class="text-slate-400 max-w-sm leading-relaxed text-sm italic">
+            "The bridge between the tangible and the infinite. Grounded guidance for those who build the world."
+          </p>
+</div>
+<div class="space-y-4">
+<h5 class="text-slate-100 font-bold uppercase text-xs tracking-widest">Connect</h5>
+<nav class="flex flex-col gap-3">
+<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Instagram</a>
+<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">LinkedIn</a>
+<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Podcast</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h5 class="text-slate-100 font-bold uppercase text-xs tracking-widest">Legal</h5>
+<nav class="flex flex-col gap-3">
+<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Privacy</a>
+<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Terms</a>
+</nav>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-12 border-t border-primary/5 mt-12 flex justify-between items-center text-xs text-slate-500">
+<p>© 2024 Sacred Guidance. All Rights Reserved.</p>
+<p>Curated for the Conscious Leader.</p>
+</div>
+</footer>
+</div>
+
+```</body></html>
