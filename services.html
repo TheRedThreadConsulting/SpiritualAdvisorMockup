@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,600;6..72,700;6..72,800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4211d4",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#151022",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"],
+                        "sans": ["Inter", "system-ui", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-display {
+            font-family: 'Newsreader', serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Top Navigation Bar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 px-6 md:px-20 py-4 bg-background-light/50 dark:bg-background-dark/50 backdrop-blur-md sticky top-0 z-50">
+<div class="flex items-center gap-3">
+<div class="text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">auto_awesome</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-display font-bold leading-tight tracking-tight">Mystic Advisor</h2>
+</div>
+<div class="flex flex-1 justify-end gap-4 md:gap-8 items-center">
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="#">Home</a>
+<a class="text-primary text-sm font-semibold" href="#">Offerings</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="#">Contact</a>
+</nav>
+<button class="flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-5 bg-primary text-white text-sm font-bold transition-transform hover:scale-105 active:scale-95">
+<span>Book a Session</span>
+</button>
+</div>
+</header>
+<main class="flex-1 px-6 md:px-20 py-12 max-w-7xl mx-auto w-full">
+<!-- Page Header -->
+<div class="flex flex-col gap-4 mb-16 text-center md:text-left">
+<h1 class="text-slate-900 dark:text-slate-100 text-5xl md:text-6xl font-display font-bold leading-tight tracking-tight">Offerings</h1>
+<p class="text-slate-600 dark:text-primary/70 text-lg md:text-xl font-medium max-w-2xl font-display italic">
+                        Spiritual guidance and strategic intuition for the modern seeker.
+                    </p>
+<div class="h-1 w-20 bg-primary rounded-full mt-2 mx-auto md:mx-0"></div>
+</div>
+<!-- Services Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Ancestral Guidance Card -->
+<div class="group flex flex-col bg-white dark:bg-white/5 border border-slate-200 dark:border-primary/10 rounded-xl overflow-hidden transition-all hover:shadow-2xl hover:shadow-primary/5 hover:-translate-y-1">
+<div class="relative w-full aspect-[4/5] overflow-hidden">
+<img alt="Ethereal smoke and light" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Abstract mystical ethereal smoke and light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwRZy7jJoZqMStHistd1Ap7bXceSPviISna6pjZ900sp3Rsax8sAQi7vDQ8DbsOXAYYp0a9S-qEb-kSibwBnUzDVcSZwCQ7gFH8WAI2as4k5vkYKr1j78rfoylhh5slXUovN6UZIrL_qeRmkuRxeZoaCyu0lAVEm5y9-z3nDrliBHRcp-NOxWv7oczOzAdmXEzNMkIfecdzOJ-L3jzw0dXWqz9QisLN-TFm6zjPHNODVkzT6tFS_admwWFOzS3HLAvYLIpmlcQ9Hw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent opacity-60"></div>
+</div>
+<div class="p-8 flex flex-col flex-1">
+<div class="text-primary mb-4">
+<span class="material-symbols-outlined text-4xl">history_edu</span>
+</div>
+<h3 class="text-slate-900 dark:text-slate-100 text-2xl font-display font-bold mb-3">Ancestral Guidance</h3>
+<p class="text-slate-600 dark:text-slate-400 text-base leading-relaxed mb-6 flex-1">
+                                Connect with your lineage and uncover wisdom from those who came before. Resolve generational patterns and find strength in your roots.
+                            </p>
+<a class="inline-flex items-center text-primary font-bold text-sm tracking-widest uppercase group/link" href="#">
+                                Learn More 
+                                <span class="material-symbols-outlined ml-2 transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Strategic Intuition Card -->
+<div class="group flex flex-col bg-white dark:bg-white/5 border border-slate-200 dark:border-primary/10 rounded-xl overflow-hidden transition-all hover:shadow-2xl hover:shadow-primary/5 hover:-translate-y-1">
+<div class="relative w-full aspect-[4/5] overflow-hidden">
+<img alt="Celestial alignment" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Modern celestial alignment or geometric star pattern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSM3Blq_SCduajYkKcXGbaJfuqDH0DVL2aazezbKWAoCCFwhV2i5MKLk47KY_vGVJrxB705a6Ih9--Ebw8i6DHte1ps8yhrNWebwRq6iNuUYWFLP7LEOOEbObP7eMMiWgJ1P99QvUSbUA_Uxy1PsXoIUPF6u5rWvqvqUS1C2jdTReJF4H5UabBrj66QLI0i5v9b-supO8RTgGKJLy88CJD54DdbkxLMwQCAUawgFfq65oC0gA9dvI02zXx8WimBBkT4jPjM4jjwRc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent opacity-60"></div>
+</div>
+<div class="p-8 flex flex-col flex-1">
+<div class="text-primary mb-4">
+<span class="material-symbols-outlined text-4xl">psychology</span>
+</div>
+<h3 class="text-slate-900 dark:text-slate-100 text-2xl font-display font-bold mb-3">Strategic Intuition</h3>
+<p class="text-slate-600 dark:text-slate-400 text-base leading-relaxed mb-6 flex-1">
+                                Blend mystical insights with practical strategy for life's biggest decisions. Align your logical mind with your inner knowing for clarity.
+                            </p>
+<a class="inline-flex items-center text-primary font-bold text-sm tracking-widest uppercase group/link" href="#">
+                                Learn More 
+                                <span class="material-symbols-outlined ml-2 transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Spiritual Mentorship Card -->
+<div class="group flex flex-col bg-white dark:bg-white/5 border border-slate-200 dark:border-primary/10 rounded-xl overflow-hidden transition-all hover:shadow-2xl hover:shadow-primary/5 hover:-translate-y-1">
+<div class="relative w-full aspect-[4/5] overflow-hidden">
+<img alt="Sacred geometry" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Abstract sacred geometry patterns and textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBejKl9L3r14-zqGSgrh4J3MHv9iXf2Kgc4KqttX7xCXg-mqM45ZW01NFVMXBjjVLqJqCY89ucKF5PVWFgUgHR_1VTQ63AVA9pT3PVt5O5hO50pAUGzZtjmM2cVI5LaFXTrUmoEUZ1IsdJtkTQgCHggxE_gqD27csY7GONw0GGQyPqfDz4d-XrNv29j44UnNZFB6kto1U0OpiyfQfqL9J--GvRxFniLdsf3ezkbQxpZayubLrQ3dVdH11m31u7_ZKgVjk1xeWQsUYs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent opacity-60"></div>
+</div>
+<div class="p-8 flex flex-col flex-1">
+<div class="text-primary mb-4">
+<span class="material-symbols-outlined text-4xl">self_improvement</span>
+</div>
+<h3 class="text-slate-900 dark:text-slate-100 text-2xl font-display font-bold mb-3">Spiritual Mentorship</h3>
+<p class="text-slate-600 dark:text-slate-400 text-base leading-relaxed mb-6 flex-1">
+                                A deep-dive journey to align your soul's purpose with your daily reality. Personal guidance for consistent growth and higher consciousness.
+                            </p>
+<a class="inline-flex items-center text-primary font-bold text-sm tracking-widest uppercase group/link" href="#">
+                                Learn More 
+                                <span class="material-symbols-outlined ml-2 transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Call to Action Section -->
+<div class="mt-24 mb-12 p-12 md:p-20 rounded-2xl bg-primary/10 border border-primary/20 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8 opacity-10">
+<span class="material-symbols-outlined text-9xl">shutter_speed</span>
+</div>
+<div class="relative z-10">
+<h2 class="text-slate-900 dark:text-slate-100 text-4xl md:text-5xl font-display font-bold mb-6">Ready to begin your journey?</h2>
+<p class="text-slate-600 dark:text-slate-300 text-lg mb-10 max-w-xl mx-auto">
+                            Schedule a discovery call to find the right path for your unique evolution and spiritual alignment.
+                        </p>
+<button class="inline-flex items-center justify-center min-w-[200px] h-14 rounded-full bg-primary text-white text-lg font-bold shadow-lg shadow-primary/20 transition-all hover:scale-105 active:scale-95">
+                            Book Now
+                        </button>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="border-t border-primary/10 bg-background-light dark:bg-background-dark/50 py-16">
+<div class="max-w-7xl mx-auto px-6 md:px-20 text-center">
+<div class="flex flex-col md:flex-row items-center justify-between gap-8 mb-12">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl">auto_awesome</span>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-display font-bold">Mystic Advisor</h2>
+</div>
+<nav class="flex flex-wrap justify-center gap-8">
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-sm font-medium" href="#">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-sm font-medium" href="#">Terms of Service</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-sm font-medium" href="#">FAQ</a>
+</nav>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-xl">public</span>
+</a>
+</div>
+</div>
+<p class="text-slate-500 dark:text-slate-500 text-sm">© 2024 Mystic Advisor. All rights reserved. Spiritual consulting for the conscious mind.</p>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
