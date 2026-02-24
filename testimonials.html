@@ -1,7 +1,7 @@
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Voices of Transformation | The Practitioner</title>
+<title>Voices of Transformation | Testimonials</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
@@ -12,15 +12,15 @@
       theme: {
         extend: {
           colors: {
-            "primary": "#4211d4",
-            "indigo-deep": "#0a0812",
-            "indigo-glow": "#2e1065",
+            "indigo-deep": "#070b14",
+            "indigo-accent": "#3b82f6",
+            "slate-glass": "#1e293b",
+            "blue-mystic": "#1e3a8a",
           },
           fontFamily: {
             "display": ["Newsreader", "serif"],
             "sans": ["Inter", "sans-serif"]
           },
-          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
         },
       },
     }
@@ -28,212 +28,209 @@
 <style type="text/tailwindcss">
     @layer base {
       body {
-        @apply bg-indigo-deep text-slate-100 font-sans selection:bg-primary/30;
+        @apply bg-indigo-deep text-slate-200 font-sans selection:bg-indigo-accent/30;
       }
       h1, h2, h3, h4, blockquote {
         @apply font-display;
       }
     }
-    .celestial-glow {
-      background: radial-gradient(circle at center, rgba(66, 17, 212, 0.15) 0%, rgba(10, 8, 18, 0) 70%);
+    .celestial-mesh {
+      background: radial-gradient(circle at 20% 30%, rgba(59, 130, 246, 0.08) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 70%, rgba(30, 58, 138, 0.12) 0%, transparent 50%);
     }
-    .masonry-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-      grid-auto-rows: 10px;
+    .card-gradient-1 {
+      background: linear-gradient(145deg, rgba(30, 41, 59, 0.4) 0%, rgba(15, 23, 42, 0.7) 100%);
     }
-    .testimonial-card {
-      break-inside: avoid;
-      margin-bottom: 2rem;
+    .card-gradient-2 {
+      background: linear-gradient(145deg, rgba(30, 58, 138, 0.2) 0%, rgba(7, 11, 20, 0.6) 100%);
+    }
+    .card-gradient-3 {
+      background: linear-gradient(145deg, rgba(15, 23, 42, 0.6) 0%, rgba(30, 41, 59, 0.3) 100%);
     }
   </style>
 </head>
 <body class="bg-indigo-deep">
-<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
-<header class="sticky top-0 z-50 w-full border-b border-white/5 bg-indigo-deep/80 backdrop-blur-md px-6 md:px-20 py-4">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden celestial-mesh">
+<header class="sticky top-0 z-50 w-full border-b border-white/5 bg-indigo-deep/90 backdrop-blur-xl px-6 md:px-20 py-5">
 <div class="max-w-7xl mx-auto flex items-center justify-between">
 <div class="flex items-center gap-3">
-<div class="text-primary">
+<div class="text-indigo-accent">
 <span class="material-symbols-outlined text-3xl">auto_awesome</span>
 </div>
-<h1 class="text-xl font-bold tracking-tight text-white font-sans">The Practitioner</h1>
+<h1 class="text-xl font-semibold tracking-[0.1em] text-white font-sans uppercase">The Practitioner</h1>
 </div>
 <nav class="hidden md:flex items-center gap-10">
-<a class="text-sm font-medium text-slate-400 hover:text-primary transition-colors" href="index.html">Home</a>
-<a class="text-sm font-medium text-slate-400 hover:text-primary transition-colors" href="aboutme.html">About</a>
-<a class="text-sm font-medium text-slate-400 hover:text-primary transition-colors" href="services.html">Services</a>
-<a class="text-sm font-medium text-white border-b border-primary transition-colors" href="testimonials.html">Testimonials</a>
+<a class="text-xs font-medium tracking-widest uppercase text-slate-400 hover:text-indigo-accent transition-colors" href="index.html">Home</a>
+<a class="text-xs font-medium tracking-widest uppercase text-slate-400 hover:text-indigo-accent transition-colors" href="services.html">Offerings</a>
+<a class="text-xs font-medium tracking-widest uppercase text-white border-b border-indigo-accent pb-1 transition-colors" href="testimonials.html">Testimonials</a>
 </nav>
-<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold tracking-wide transition-all">
-          Book a Session
+<button class="bg-indigo-accent/10 hover:bg-indigo-accent/20 text-indigo-accent border border-indigo-accent/30 px-6 py-2 rounded-sm text-xs font-bold uppercase tracking-widest transition-all">
+          Inquiry
         </button>
 </div>
 </header>
 <main class="flex-1">
-<section class="relative py-24 md:py-32 px-6 overflow-hidden">
-<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full celestial-glow opacity-50 -z-10"></div>
-<div class="max-w-4xl mx-auto text-center">
-<span class="text-primary font-medium tracking-[0.3em] uppercase text-xs mb-6 block">Voices of Transformation</span>
-<h2 class="text-5xl md:text-7xl font-light mb-12 italic leading-tight">
+<section class="relative py-24 md:py-36 px-6">
+<div class="max-w-5xl mx-auto text-center">
+<span class="text-indigo-accent font-medium tracking-[0.4em] uppercase text-[10px] mb-8 block">Voices of Transformation</span>
+<h2 class="text-5xl md:text-7xl font-extralight mb-16 italic text-slate-100 leading-tight">
             Witnessing the Shift from <br/> Ambition to Mastery.
           </h2>
-<div class="relative inline-block py-12 px-8">
-<div class="absolute inset-0 celestial-glow opacity-40"></div>
-<blockquote class="relative text-2xl md:text-3xl font-light text-slate-200 leading-relaxed italic">
+<div class="relative max-w-3xl mx-auto">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 w-48 h-48 bg-indigo-accent/10 blur-[100px] rounded-full"></div>
+<blockquote class="relative text-2xl md:text-3xl font-light text-slate-300 leading-relaxed italic">
             "The work does not merely solve problems; it recalibrates the internal compass. My strategic intuition has sharpened into a tool of precision I didn't know was possible."
           </blockquote>
-<p class="mt-6 text-sm tracking-widest text-slate-400 uppercase">— Global Operations Executive, Fortune 500</p>
+<div class="mt-8 flex flex-col items-center">
+<div class="h-px w-12 bg-indigo-accent/40 mb-6"></div>
+<p class="text-[11px] tracking-[0.3em] text-slate-500 uppercase">Global Operations Executive • Fortune 500</p>
+</div>
 </div>
 </div>
 </section>
 <section class="pb-32 px-6 md:px-20 max-w-7xl mx-auto">
 <div class="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
-<div class="testimonial-card break-inside-avoid bg-white/5 border border-white/10 p-8 rounded-2xl relative group hover:border-primary/40 transition-all duration-500">
-<div class="absolute -top-4 -left-4 text-primary opacity-20 text-6xl font-display">“</div>
+<div class="card-gradient-1 break-inside-avoid border border-white/5 p-10 rounded-sm relative group hover:border-indigo-accent/30 transition-all duration-700">
 <div class="relative z-10">
-<p class="text-lg text-slate-300 leading-relaxed mb-8 font-light italic">
-                Working with The Practitioner moved me beyond tactical leadership. We addressed the underlying energetic blockages that were manifesting as fatigue. The result was a profound sense of Personal Mastery that translated directly into our most successful fiscal year.
+<p class="text-lg text-slate-300 leading-relaxed mb-10 font-light italic">
+                Working with The Practitioner moved me beyond tactical leadership. We addressed the underlying energetic blockages that were manifesting as fatigue. The result was a profound sense of <span class="text-white">Personal Mastery</span> that translated directly into our most successful fiscal year.
               </p>
-<div class="flex items-center gap-4 border-t border-white/5 pt-6">
-<img alt="Portrait" class="w-12 h-12 rounded-full object-cover border border-primary/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMB4-Sp4pBCcWRFBzpVFoUeeCmFRM1LHy9IhsDgLL-CpNeW4mxzgrVxwjMBGMWc2ygYn3b444ZrnjC-eMbjIB9jUdt-d-BSiv97AR6G8iu8XD_YpJ9OkUnMUz33VPdYXnVuTLyfyGASOgIyMXeM58GLqTsKq9uaoQfPbDDZXlMA3TMWuZy-1poq4XfwCdEFRHvjJQYdTGgtH6IMSklLDuExpbh8NM15fBT_F2bdVqse6RhfKTN78O6TiIOb1qZ1mSHJpEe2WidNoE"/>
+<div class="flex items-center gap-5">
+<img alt="Portrait" class="w-14 h-14 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 border border-white/10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMB4-Sp4pBCcWRFBzpVFoUeeCmFRM1LHy9IhsDgLL-CpNeW4mxzgrVxwjMBGMWc2ygYn3b444ZrnjC-eMbjIB9jUdt-d-BSiv97AR6G8iu8XD_YpJ9OkUnMUz33VPdYXnVuTLyfyGASOgIyMXeM58GLqTsKq9uaoQfPbDDZXlMA3TMWuZy-1poq4XfwCdEFRHvjJQYdTGgtH6IMSklLDuExpbh8NM15fBT_F2bdVqse6RhfKTN78O6TiIOb1qZ1mSHJpEe2WidNoE"/>
 <div>
-<h4 class="text-white font-semibold text-sm font-sans">Marcus Thorne</h4>
-<p class="text-slate-500 text-xs uppercase tracking-wider">CEO, Aetheric Tech Group</p>
+<h4 class="text-white font-medium text-sm tracking-wide">Marcus Thorne</h4>
+<p class="text-indigo-accent/70 text-[10px] uppercase tracking-widest mt-1 font-semibold">CEO, Aetheric Tech Group</p>
 </div>
 </div>
 </div>
 </div>
-<div class="testimonial-card break-inside-avoid bg-white/5 border border-white/10 p-8 rounded-2xl relative group hover:border-primary/40 transition-all duration-500">
+<div class="card-gradient-2 break-inside-avoid border border-white/5 p-10 rounded-sm relative group hover:border-indigo-accent/30 transition-all duration-700">
 <div class="relative z-10">
-<div class="absolute inset-0 celestial-glow opacity-20 -z-10 group-hover:opacity-40 transition-opacity"></div>
-<p class="text-lg text-slate-300 leading-relaxed mb-8 font-light italic">
-                Strategic Intuition is often dismissed as 'gut feeling'. Through this advisory, I learned to harness it as a rigorous discipline. It has changed how I approach venture capital and personal legacy.
+<p class="text-lg text-slate-300 leading-relaxed mb-10 font-light italic">
+<span class="text-white">Strategic Intuition</span> is often dismissed as 'gut feeling'. Through this advisory, I learned to harness it as a rigorous discipline. It has changed how I approach venture capital and personal legacy.
               </p>
-<div class="flex items-center gap-4 border-t border-white/5 pt-6">
-<img alt="Portrait" class="w-12 h-12 rounded-full object-cover border border-primary/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1WxqTLgPaNKgN80NDYWSO3p3PxBU-ORdu3riWHUupL6eJUZ1-A_IaqLTPnx94ikg1wnZm8cDcYprIZNp8y59ITj3aignCQb_vqz8-lm6ux3kQmWUmdfKHMrkP7KIA3iWT15oB6EkdvAOSURNjPrPQC7-MDnMrxKCct7rz9BmIu42zkbTF4ga4s17QBXn__6-lu7VXhXPUUzzEQZUiIFPd60Us0SbZVvK-gwShGQWYijBBgxCHgwD6nDGIOJDOtRIOWYftyz8kAqY"/>
+<div class="flex items-center gap-5">
+<img alt="Portrait" class="w-14 h-14 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 border border-white/10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1WxqTLgPaNKgN80NDYWSO3p3PxBU-ORdu3riWHUupL6eJUZ1-A_IaqLTPnx94ikg1wnZm8cDcYprIZNp8y59ITj3aignCQb_vqz8-lm6ux3kQmWUmdfKHMrkP7KIA3iWT15oB6EkdvAOSURNjPrPQC7-MDnMrxKCct7rz9BmIu42zkbTF4ga4s17QBXn__6-lu7VXhXPUUzzEQZUiIFPd60Us0SbZVvK-gwShGQWYijBBgxCHgwD6nDGIOJDOtRIOWYftyz8kAqY"/>
 <div>
-<h4 class="text-white font-semibold text-sm font-sans">Dr. Elena Ross</h4>
-<p class="text-slate-500 text-xs uppercase tracking-wider">Managing Partner, Nexus Ventures</p>
+<h4 class="text-white font-medium text-sm tracking-wide">Dr. Elena Ross</h4>
+<p class="text-indigo-accent/70 text-[10px] uppercase tracking-widest mt-1 font-semibold">Managing Partner, Nexus Ventures</p>
 </div>
 </div>
 </div>
 </div>
-<div class="testimonial-card break-inside-avoid bg-white/5 border border-white/10 p-8 rounded-2xl relative group hover:border-primary/40 transition-all duration-500">
+<div class="card-gradient-3 break-inside-avoid border border-white/5 p-10 rounded-sm relative group hover:border-indigo-accent/30 transition-all duration-700">
 <div class="relative z-10">
-<p class="text-lg text-slate-300 leading-relaxed mb-8 font-light italic">
+<p class="text-lg text-slate-300 leading-relaxed mb-10 font-light italic">
                 A bridge between the boardroom and the inner sanctum. No clichés, no fluff—just deep, grounded transformation that respects the intellect while touching the soul.
               </p>
-<div class="flex items-center gap-4 border-t border-white/5 pt-6">
-<img alt="Portrait" class="w-12 h-12 rounded-full object-cover border border-primary/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA7iPe6-1sHu-gjCW9_ytRRVWO5sDkRyFt9ySEcsDZyXPkKDRcoUjzGMmlBPZANiClK5kuEFOfTkHgmkcl_AxtfwJWoQSlXh-rwXyJ7wIQIBYV2_94erwOUOWD02Mwf66L1TxYsznsr8zgSHRgX4PCyxIVWiqyvioB-dMBqcLaODqD8sEuCR9Ndj75E9w6tf1BY-2grocWfefMhRt0w2rwO0K6g1ONGcne7osoLxY-ObEfu0qWY0bSrpaijK191rMFhHUVKvNEslw"/>
+<div class="flex items-center gap-5">
+<img alt="Portrait" class="w-14 h-14 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 border border-white/10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA7iPe6-1sHu-gjCW9_ytRRVWO5sDkRyFt9ySEcsDZyXPkKDRcoUjzGMmlBPZANiClK5kuEFOfTkHgmkcl_AxtfwJWoQSlXh-rwXyJ7wIQIBYV2_94erwOUOWD02Mwf66L1TxYsznsr8zgSHRgX4PCyxIVWiqyvioB-dMBqcLaODqD8sEuCR9Ndj75E9w6tf1BY-2grocWfefMhRt0w2rwO0K6g1ONGcne7osoLxY-ObEfu0qWY0bSrpaijK191rMFhHUVKvNEslw"/>
 <div>
-<h4 class="text-white font-semibold text-sm font-sans">Julian Vane</h4>
-<p class="text-slate-500 text-xs uppercase tracking-wider">Creative Director &amp; Philanthropist</p>
+<h4 class="text-white font-medium text-sm tracking-wide">Julian Vane</h4>
+<p class="text-indigo-accent/70 text-[10px] uppercase tracking-widest mt-1 font-semibold">Creative Director &amp; Philanthropist</p>
 </div>
 </div>
 </div>
 </div>
-<div class="testimonial-card break-inside-avoid bg-white/5 border border-white/10 p-8 rounded-2xl relative group hover:border-primary/40 transition-all duration-500">
+<div class="break-inside-avoid bg-indigo-accent/5 border border-indigo-accent/20 p-12 rounded-sm relative group hover:border-indigo-accent/50 transition-all duration-700 shadow-2xl shadow-black/50">
+<div class="absolute inset-0 bg-gradient-to-br from-indigo-accent/10 to-transparent pointer-events-none"></div>
 <div class="relative z-10">
-<p class="text-lg text-slate-300 leading-relaxed mb-8 font-light italic">
-                I sought clarity for a specific transition and found a lifelong framework for discernment. The Practitioner's ability to ground metaphysical concepts into actionable professional wisdom is unparalleled.
-              </p>
-<div class="flex items-center gap-4 border-t border-white/5 pt-6">
-<img alt="Portrait" class="w-12 h-12 rounded-full object-cover border border-primary/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASBhJtK4hlCPoi6ibkjg3J131mcQNShdjzGQ02MTMKcBG2u3iHnV_5kTperfrbNcZ0YS77o5F1c0tYTbDIFPNN_Q5JkTXCsxqUpkWkFdIikeHAfxXfwUFF4amzznHynDUmFTjkq-AtUHucwR4rs_KkXc01yqHp4LfS-BMWbq2laJYdCPy0xU8-409_h-fW0LgbqlKaqRrCl_FB9nit7R6RVdQOaDSAUzminWZJN0PhNggp6W38pzeLEqDiIvFAk5aPlugV9bfEG5M"/>
-<div>
-<h4 class="text-white font-semibold text-sm font-sans">Sarah Chen</h4>
-<p class="text-slate-500 text-xs uppercase tracking-wider">VP of Strategy, BioLogix</p>
-</div>
-</div>
-</div>
-</div>
-<div class="testimonial-card break-inside-avoid bg-primary/10 border border-primary/30 p-10 rounded-2xl relative group hover:border-primary/60 transition-all duration-500">
-<div class="absolute inset-0 celestial-glow opacity-30"></div>
-<div class="relative z-10">
-<span class="material-symbols-outlined text-primary mb-4 block">star</span>
-<p class="text-xl text-white leading-relaxed mb-8 font-medium italic">
+<span class="material-symbols-outlined text-indigo-accent mb-6 block text-4xl font-extralight">flare</span>
+<p class="text-2xl text-white leading-snug mb-10 font-light italic">
                 "The integration of shadow work into executive coaching changed everything. I am no longer fighting myself; I am leading from a place of wholeness."
               </p>
-<div class="flex items-center gap-4 border-t border-white/10 pt-6">
-<img alt="Portrait" class="w-12 h-12 rounded-full object-cover border border-primary/50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzgYYqY2KWkgta0icnN-zw4i2NP89JPU0EB9qPTDk-nsw31JgIqd2wIxpwhFr6SsvXUmgBJScGYcnmXLIQJ2B9IVlbXv8OGWHXEkmnJwdA4DRjOznY4QUL8HjBEXifWywCkBJnbtU3qGqpnWtbptR9s9sOcpef9i7I3CfWXpIGRSyGBWnlYQaX1PBg_vUgNoLajoGhIOiMM33TTHTFTyQGGHowOrkPCKiDZ2zsaZ0Iqvq5wT1AUjV48zfMk1hkea16zl5wEccqtdc"/>
+<div class="flex items-center gap-5">
+<img alt="Portrait" class="w-16 h-16 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 border-2 border-indigo-accent/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzgYYqY2KWkgta0icnN-zw4i2NP89JPU0EB9qPTDk-nsw31JgIqd2wIxpwhFr6SsvXUmgBJScGYcnmXLIQJ2B9IVlbXv8OGWHXEkmnJwdA4DRjOznY4QUL8HjBEXifWywCkBJnbtU3qGqpnWtbptR9s9sOcpef9i7I3CfWXpIGRSyGBWnlYQaX1PBg_vUgNoLajoGhIOiMM33TTHTFTyQGGHowOrkPCKiDZ2zsaZ0Iqvq5wT1AUjV48zfMk1hkea16zl5wEccqtdc"/>
 <div>
-<h4 class="text-white font-semibold text-sm font-sans">Robert Hale</h4>
-<p class="text-primary/80 text-xs uppercase tracking-wider font-bold">Founder, Sovereign Capital</p>
+<h4 class="text-white font-semibold text-base tracking-wide">Robert Hale</h4>
+<p class="text-indigo-accent text-[11px] uppercase tracking-[0.2em] mt-1 font-bold">Founder, Sovereign Capital</p>
 </div>
 </div>
 </div>
 </div>
-<div class="testimonial-card break-inside-avoid bg-white/5 border border-white/10 p-8 rounded-2xl relative group hover:border-primary/40 transition-all duration-500">
+<div class="card-gradient-1 break-inside-avoid border border-white/5 p-10 rounded-sm relative group hover:border-indigo-accent/30 transition-all duration-700">
 <div class="relative z-10">
-<p class="text-lg text-slate-300 leading-relaxed mb-8 font-light italic">
-                Her approach to Personal Mastery is the most sophisticated I have encountered in twenty years of development work. She helps you find the silence within the noise of a high-growth career.
+<p class="text-lg text-slate-300 leading-relaxed mb-10 font-light italic">
+                I sought clarity for a specific transition and found a lifelong framework for discernment. The Practitioner's ability to ground metaphysical concepts into actionable professional wisdom is unparalleled.
               </p>
-<div class="flex items-center gap-4 border-t border-white/5 pt-6">
-<img alt="Portrait" class="w-12 h-12 rounded-full object-cover border border-primary/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxAKiZ4lf5BsdqXrkUGcC_jcspred5Q2vNIRM_Olb3qe_VLvYxG4UIbfOyYlhOXGAxtn4Iz11gZZcXuo1bAxHYo6C4S8hWV9xn5_fAQUkrsI1mR5w7CruSYFX3Df9odlt0FMPz1y0rq-bHmmwuzAPJ4JpSN1rHVmzQA4ATrG2ZhmSrVpcFmk9oOlSAB8At34hHDLo5-5gdG7m1cWtQLBtudoasP87q8DqzBLRjaJ5exurQi-Qbf8IoncCm7FLQdt28aD_-6i7Efyo"/>
+<div class="flex items-center gap-5">
+<img alt="Portrait" class="w-14 h-14 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 border border-white/10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASBhJtK4hlCPoi6ibkjg3J131mcQNShdjzGQ02MTMKcBG2u3iHnV_5kTperfrbNcZ0YS77o5F1c0tYTbDIFPNN_Q5JkTXCsxqUpkWkFdIikeHAfxXfwUFF4amzznHynDUmFTjkq-AtUHucwR4rs_KkXc01yqHp4LfS-BMWbq2laJYdCPy0xU8-409_h-fW0LgbqlKaqRrCl_FB9nit7R6RVdQOaDSAUzminWZJN0PhNggp6W38pzeLEqDiIvFAk5aPlugV9bfEG5M"/>
 <div>
-<h4 class="text-white font-semibold text-sm font-sans">Aria Montgomery</h4>
-<p class="text-slate-500 text-xs uppercase tracking-wider">International Human Rights Attorney</p>
+<h4 class="text-white font-medium text-sm tracking-wide">Sarah Chen</h4>
+<p class="text-indigo-accent/70 text-[10px] uppercase tracking-widest mt-1 font-semibold">VP of Strategy, BioLogix</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card-gradient-2 break-inside-avoid border border-white/5 p-10 rounded-sm relative group hover:border-indigo-accent/30 transition-all duration-700">
+<div class="relative z-10">
+<p class="text-lg text-slate-300 leading-relaxed mb-10 font-light italic">
+                Her approach to <span class="text-white">Personal Mastery</span> is the most sophisticated I have encountered in twenty years of development work. She helps you find the silence within the noise of a high-growth career.
+              </p>
+<div class="flex items-center gap-5">
+<img alt="Portrait" class="w-14 h-14 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 border border-white/10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxAKiZ4lf5BsdqXrkUGcC_jcspred5Q2vNIRM_Olb3qe_VLvYxG4UIbfOyYlhOXGAxtn4Iz11gZZcXuo1bAxHYo6C4S8hWV9xn5_fAQUkrsI1mR5w7CruSYFX3Df9odlt0FMPz1y0rq-bHmmwuzAPJ4JpSN1rHVmzQA4ATrG2ZhmSrVpcFmk9oOlSAB8At34hHDLo5-5gdG7m1cWtQLBtudoasP87q8DqzBLRjaJ5exurQi-Qbf8IoncCm7FLQdt28aD_-6i7Efyo"/>
+<div>
+<h4 class="text-white font-medium text-sm tracking-wide">Aria Montgomery</h4>
+<p class="text-indigo-accent/70 text-[10px] uppercase tracking-widest mt-1 font-semibold">International Human Rights Attorney</p>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section class="relative py-32 px-6 overflow-hidden border-t border-white/5">
-<div class="absolute inset-0 bg-primary/5 z-0"></div>
+<section class="relative py-40 px-6 overflow-hidden border-t border-white/5 bg-slate-900/30">
+<div class="absolute inset-0 celestial-mesh opacity-50"></div>
 <div class="relative z-10 max-w-4xl mx-auto text-center">
-<h2 class="text-4xl md:text-6xl font-light text-white mb-8 italic">Your transformation awaits.</h2>
-<p class="text-xl text-slate-400 mb-12 max-w-2xl mx-auto font-light">
+<h2 class="text-4xl md:text-6xl font-extralight text-white mb-10 italic">Your transformation awaits.</h2>
+<p class="text-xl text-slate-400 mb-14 max-w-2xl mx-auto font-light leading-relaxed">
             Serious inquiry only. For those ready to step into their highest expression of leadership and life.
           </p>
 <div class="flex flex-col sm:row gap-4 justify-center">
-<button class="bg-primary hover:bg-primary/90 text-white px-10 py-5 rounded-lg text-lg font-bold transition-all shadow-xl shadow-primary/20">
+<button class="bg-indigo-accent hover:bg-blue-600 text-white px-12 py-5 rounded-sm text-[11px] font-bold uppercase tracking-[0.3em] transition-all shadow-[0_0_30px_rgba(59,130,246,0.2)]">
               Apply for Advisory
             </button>
 </div>
 </div>
 </section>
 </main>
-<footer class="bg-indigo-deep border-t border-white/5 py-16 px-6 md:px-20">
-<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-<div class="col-span-1 md:col-span-2 space-y-6">
+<footer class="bg-indigo-deep border-t border-white/5 py-24 px-6 md:px-20">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-16">
+<div class="col-span-1 md:col-span-2 space-y-8">
 <div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary text-2xl">auto_awesome</span>
-<span class="text-xl font-bold tracking-tight text-white font-sans">The Practitioner</span>
+<span class="material-symbols-outlined text-indigo-accent text-3xl font-extralight">auto_awesome</span>
+<span class="text-lg font-bold tracking-[0.2em] text-white font-sans uppercase">The Practitioner</span>
 </div>
-<p class="text-slate-500 max-w-sm font-light">
+<p class="text-slate-500 max-w-sm font-light leading-relaxed text-sm">
             High-end spiritual advisory for visionary leaders. Grounded in tradition, ethical by design, transformative in practice.
           </p>
 </div>
 <div>
-<h5 class="text-white font-semibold mb-6 font-sans text-sm tracking-widest uppercase">Explore</h5>
-<ul class="space-y-4 text-slate-500 text-sm">
-<li><a class="hover:text-primary transition-colors" href="#">The Process</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Lineage</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Ethics</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Inquiry</a></li>
+<h5 class="text-white font-semibold mb-8 font-sans text-[10px] tracking-[0.4em] uppercase">Explore</h5>
+<ul class="space-y-4 text-slate-500 text-[11px] tracking-[0.2em] uppercase">
+<li><a class="hover:text-indigo-accent transition-colors" href="index.html">Homes</a></li>
+<li><a class="hover:text-indigo-accent transition-colors" href="services.html">Offerings</a></li>
 </ul>
 </div>
 <div>
-<h5 class="text-white font-semibold mb-6 font-sans text-sm tracking-widest uppercase">Connect</h5>
-<div class="flex gap-4">
-<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-slate-500 hover:text-primary hover:border-primary transition-all" href="#">
-<span class="material-symbols-outlined text-sm">alternate_email</span>
+<h5 class="text-white font-semibold mb-8 font-sans text-[10px] tracking-[0.4em] uppercase">Connect</h5>
+<div class="flex gap-6">
+<a class="text-slate-500 hover:text-indigo-accent transition-all" href="#">
+<span class="material-symbols-outlined text-xl">alternate_email</span>
 </a>
-<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-slate-500 hover:text-primary hover:border-primary transition-all" href="#">
-<span class="material-symbols-outlined text-sm">public</span>
+<a class="text-slate-500 hover:text-indigo-accent transition-all" href="#">
+<span class="material-symbols-outlined text-xl">public</span>
 </a>
 </div>
 </div>
 </div>
-<div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[10px] text-slate-600 uppercase tracking-[0.2em] gap-4">
+<div class="max-w-7xl mx-auto mt-24 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[9px] text-slate-600 uppercase tracking-[0.3em] gap-6">
 <p>© 2024 The Practitioner. All rights reserved.</p>
-<div class="flex gap-8">
-<a class="hover:text-white transition-colors" href="#">Privacy</a>
-<a class="hover:text-white transition-colors" href="#">Ethics</a>
-<a class="hover:text-white transition-colors" href="#">Terms</a>
+<div class="flex gap-10">
+<a class="hover:text-white transition-colors" href="index.html">Home</a>
+<a class="hover:text-white transition-colors" href="services.html">Services</a>
 </div>
 </div>
 </footer>
 </div>
 
-</body></html>
+```</body></html>
