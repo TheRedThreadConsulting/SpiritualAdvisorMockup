@@ -1,236 +1,183 @@
+<!DOCTYPE html>
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Voices of Transformation | Testimonials</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,600;6..72,700;800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "indigo-deep": "#070b14",
-            "indigo-accent": "#3b82f6",
-            "slate-glass": "#1e293b",
-            "blue-mystic": "#1e3a8a",
-          },
-          fontFamily: {
-            "display": ["Newsreader", "serif"],
-            "sans": ["Inter", "sans-serif"]
-          },
-        },
-      },
-    }
-  </script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#38bdf8",
+                        "accent-blue": "#7dd3fc",
+                        "midnight": "#020617",
+                        "slate-card": "#1e293b",
+                        "silver": "#cbd5e1",
+                        "indigo-950": "#0f172a",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"],
+                        "sans": ["Inter", "system-ui", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
 <style type="text/tailwindcss">
-    @layer base {
-      body {
-        @apply bg-indigo-deep text-slate-200 font-sans selection:bg-indigo-accent/30;
-      }
-      h1, h2, h3, h4, blockquote {
-        @apply font-display;
-      }
-    }
-    .celestial-mesh {
-      background: radial-gradient(circle at 20% 30%, rgba(59, 130, 246, 0.08) 0%, transparent 50%),
-                  radial-gradient(circle at 80% 70%, rgba(30, 58, 138, 0.12) 0%, transparent 50%);
-    }
-    .card-gradient-1 {
-      background: linear-gradient(145deg, rgba(30, 41, 59, 0.4) 0%, rgba(15, 23, 42, 0.7) 100%);
-    }
-    .card-gradient-2 {
-      background: linear-gradient(145deg, rgba(30, 58, 138, 0.2) 0%, rgba(7, 11, 20, 0.6) 100%);
-    }
-    .card-gradient-3 {
-      background: linear-gradient(145deg, rgba(15, 23, 42, 0.6) 0%, rgba(30, 41, 59, 0.3) 100%);
-    }
-  </style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-display {
+            font-family: 'Newsreader', serif;
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #94a3b8, #e2e8f0, #7dd3fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-overlay {
+            background: linear-gradient(to top, rgba(2, 6, 23, 0.98) 0%, rgba(2, 6, 23, 0.6) 60%, rgba(2, 6, 23, 0.2) 100%);
+        }
+        .bg-mesh {
+            background-color: #020617;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(30, 41, 59, 0.5) 0, transparent 50%), 
+                radial-gradient(at 100% 0%, rgba(15, 23, 42, 0.5) 0, transparent 50%);
+        }
+    </style>
 </head>
-<body class="bg-indigo-deep">
-<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden celestial-mesh">
-<header class="sticky top-0 z-50 w-full border-b border-white/5 bg-indigo-deep/90 backdrop-blur-xl px-6 md:px-20 py-5">
-<div class="max-w-7xl mx-auto flex items-center justify-between">
-<div class="flex items-center gap-3">
-<div class="text-indigo-accent">
-<span class="material-symbols-outlined text-3xl">auto_awesome</span>
+<body class="bg-midnight text-slate-100 min-h-screen selection:bg-primary/30 bg-mesh">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<header class="flex items-center justify-between px-8 md:px-16 py-6 bg-midnight/80 backdrop-blur-xl sticky top-0 z-50 border-b border-white/5">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl">blur_on</span>
+<h2 class="text-xl font-display font-medium tracking-tight text-white">Ethereal Council</h2>
 </div>
-<h1 class="text-xl font-semibold tracking-[0.1em] text-white font-sans uppercase">The Practitioner</h1>
-</div>
-<nav class="hidden md:flex items-center gap-10">
-<a class="text-xs font-medium tracking-widest uppercase text-slate-400 hover:text-indigo-accent transition-colors" href="index.html">Home</a>
-<a class="text-xs font-medium tracking-widest uppercase text-slate-400 hover:text-indigo-accent transition-colors" href="services.html">Offerings</a>
-<a class="text-xs font-medium tracking-widest uppercase text-white border-b border-indigo-accent pb-1 transition-colors" href="testimonials.html">Testimonials</a>
+<nav class="hidden md:flex items-center gap-12">
+<a class="text-slate-400 hover:text-white transition-colors text-xs font-medium tracking-[0.2em] uppercase" href="index.html">Home</a>
+<a class="text-slate-400 hover:text-white transition-colors text-xs font-medium tracking-[0.2em] uppercase" href="services.html">Offerings</a>
+<a class="text-slate-400 hover:text-white transition-colors text-xs font-medium tracking-[0.2em] uppercase" href="testimonials.html">Testimonials</a>
 </nav>
-<button class="bg-indigo-accent/10 hover:bg-indigo-accent/20 text-indigo-accent border border-indigo-accent/30 px-6 py-2 rounded-sm text-xs font-bold uppercase tracking-widest transition-all">
-          Inquiry
+<button class="px-6 py-2 border border-primary/40 hover:border-primary text-primary hover:text-white transition-all text-xs font-bold tracking-widest uppercase rounded-full">
+            Inquire
         </button>
-</div>
 </header>
-<main class="flex-1">
-<section class="relative py-24 md:py-36 px-6">
-<div class="max-w-5xl mx-auto text-center">
-<span class="text-indigo-accent font-medium tracking-[0.4em] uppercase text-[10px] mb-8 block">Voices of Transformation</span>
-<h2 class="text-5xl md:text-7xl font-extralight mb-16 italic text-slate-100 leading-tight">
-            Witnessing the Shift from <br/> Ambition to Mastery.
-          </h2>
-<div class="relative max-w-3xl mx-auto">
-<div class="absolute -top-10 left-1/2 -translate-x-1/2 w-48 h-48 bg-indigo-accent/10 blur-[100px] rounded-full"></div>
-<blockquote class="relative text-2xl md:text-3xl font-light text-slate-300 leading-relaxed italic">
-            "The work does not merely solve problems; it recalibrates the internal compass. My strategic intuition has sharpened into a tool of precision I didn't know was possible."
-          </blockquote>
-<div class="mt-8 flex flex-col items-center">
-<div class="h-px w-12 bg-indigo-accent/40 mb-6"></div>
-<p class="text-[11px] tracking-[0.3em] text-slate-500 uppercase">Global Operations Executive • Fortune 500</p>
+<main class="flex-1 px-8 md:px-16 py-20 max-w-7xl mx-auto w-full">
+<div class="flex flex-col gap-6 mb-24 max-w-3xl">
+<span class="text-primary font-bold text-xs tracking-[0.3em] uppercase">The Practitioner</span>
+<h1 class="text-5xl md:text-7xl font-display font-light leading-[1.1] tracking-tight text-gradient">About Me</h1>
+<p class="text-slate-400 text-lg md:text-xl font-light leading-relaxed font-display italic">
+                Guided by the unseen and grounded in the strategic, I serve as a conduit for leaders seeking to align their worldly impact with their soul's highest resonance.
+            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="group relative flex flex-col h-[600px] rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/50 transition-all">
+<img alt="Ancient stone artifacts" class="absolute inset-0 w-full h-full object-cover grayscale opacity-30 group-hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwRZy7jJoZqMStHistd1Ap7bXceSPviISna6pjZ900sp3Rsax8sAQi7vDQ8DbsOXAYYp0a9S-qEb-kSibwBnUzDVcSZwCQ7gFH8WAI2as4k5vkYKr1j78rfoylhh5slXUovN6UZIrL_qeRmkuRxeZoaCyu0lAVEm5y9-z3nDrliBHRcp-NOxWv7oczOzAdmXEzNMkIfecdzOJ-L3jzw0dXWqz9QisLN-TFm6zjPHNODVkzT6tFS_admwWFOzS3HLAvYLIpmlcQ9Hw"/>
+<div class="absolute inset-0 card-overlay"></div>
+<div class="relative mt-auto p-10 flex flex-col gap-4">
+<div class="flex items-center gap-3 mb-2">
+<span class="h-px w-8 bg-primary"></span>
+<span class="text-xs font-bold tracking-widest uppercase text-primary">Foundations</span>
+</div>
+<h3 class="text-3xl font-display font-medium text-white">The Lineage</h3>
+<p class="text-slate-300 font-light leading-relaxed max-w-md">
+                        Descended from a long line of seers and system-builders, my path was forged at the intersection of ancestral mysticism and modern institutional logic. This heritage allows for a unique synthesis of traditional wisdom and contemporary application.
+                    </p>
+<div class="pt-6">
+<span class="text-[10px] font-bold tracking-[0.3em] uppercase text-slate-500">Rooted in Tradition</span>
 </div>
 </div>
 </div>
-</section>
-<section class="pb-32 px-6 md:px-20 max-w-7xl mx-auto">
-<div class="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
-<div class="card-gradient-1 break-inside-avoid border border-white/5 p-10 rounded-sm relative group hover:border-indigo-accent/30 transition-all duration-700">
-<div class="relative z-10">
-<p class="text-lg text-slate-300 leading-relaxed mb-10 font-light italic">
-                Working with The Practitioner moved me beyond tactical leadership. We addressed the underlying energetic blockages that were manifesting as fatigue. The result was a profound sense of <span class="text-white">Personal Mastery</span> that translated directly into our most successful fiscal year.
-              </p>
-<div class="flex items-center gap-5">
-<img alt="Portrait" class="w-14 h-14 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 border border-white/10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMB4-Sp4pBCcWRFBzpVFoUeeCmFRM1LHy9IhsDgLL-CpNeW4mxzgrVxwjMBGMWc2ygYn3b444ZrnjC-eMbjIB9jUdt-d-BSiv97AR6G8iu8XD_YpJ9OkUnMUz33VPdYXnVuTLyfyGASOgIyMXeM58GLqTsKq9uaoQfPbDDZXlMA3TMWuZy-1poq4XfwCdEFRHvjJQYdTGgtH6IMSklLDuExpbh8NM15fBT_F2bdVqse6RhfKTN78O6TiIOb1qZ1mSHJpEe2WidNoE"/>
+<div class="group relative flex flex-col h-[600px] rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/50 transition-all">
+<img alt="Light reflecting on glass" class="absolute inset-0 w-full h-full object-cover grayscale opacity-30 group-hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSM3Blq_SCduajYkKcXGbaJfuqDH0DVL2aazezbKWAoCCFwhV2i5MKLk47KY_vGVJrxB705a6Ih9--Ebw8i6DHte1ps8yhrNWebwRq6iNuUYWFLP7LEOOEbObP7eMMiWgJ1P99QvUSbUA_Uxy1PsXoIUPF6u5rWvqvqUS1C2jdTReJF4H5UabBrj66QLI0i5v9b-supO8RTgGKJLy88CJD54DdbkxLMwQCAUawgFfq65oC0gA9dvI02zXx8WimBBkT4jPjM4jjwRc"/>
+<div class="absolute inset-0 card-overlay"></div>
+<div class="relative mt-auto p-10 flex flex-col gap-4">
+<div class="flex items-center gap-3 mb-2">
+<span class="h-px w-8 bg-primary"></span>
+<span class="text-xs font-bold tracking-widest uppercase text-primary">Purpose</span>
+</div>
+<h3 class="text-3xl font-display font-medium text-white">The Vision</h3>
+<p class="text-slate-300 font-light leading-relaxed max-w-md">
+                        I envision a world where leadership is an act of sacred stewardship. My work is dedicated to those who hold the reins of influence, helping them wield power with a clarity that transcends the material and touches the eternal.
+                    </p>
+<div class="pt-6">
+<span class="text-[10px] font-bold tracking-[0.3em] uppercase text-slate-500">Guided by Clarity</span>
+</div>
+</div>
+</div>
+<div class="group relative flex flex-col h-[600px] rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/50 transition-all md:col-span-2">
+<img alt="Abstract celestial geometry" class="absolute inset-0 w-full h-full object-cover grayscale opacity-20 group-hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBejKl9L3r14-zqGSgrh4J3MHv9iXf2Kgc4KqttX7xCXg-mqM45ZW01NFVMXBjjVLqJqCY89ucKF5PVWFgUgHR_1VTQ63AVA9pT3PVt5O5hO50pAUGzZtjmM2cVI5LaFXTrUmoEUZ1IsdJtkTQgCHggxE_gqD27csY7GONw0GGQyPqfDz4d-XrNv29j44UnNZFB6kto1U0OpiyfQfqL9J--GvRxFniLdsf3ezkbQxpZayubLrQ3dVdH11m31u7_ZKgVjk1xeWQsUYs"/>
+<div class="absolute inset-0 card-overlay"></div>
+<div class="relative mt-auto p-12 flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="flex flex-col gap-4 max-w-xl">
+<div class="flex items-center gap-3 mb-2">
+<span class="h-px w-8 bg-primary"></span>
+<span class="text-xs font-bold tracking-widest uppercase text-primary">Process</span>
+</div>
+<h3 class="text-4xl font-display font-medium text-white">The Method</h3>
+<p class="text-slate-300 font-light text-lg leading-relaxed">
+                            Through a proprietary blend of somatic awareness, archetypal analysis, and strategic forecasting, I facilitate a "descent" into the core truths of an individual or organization. We strip away the noise to reveal the fundamental energetic structure beneath.
+                        </p>
+</div>
+<div class="flex flex-col gap-6 items-start md:items-end">
+<div class="text-right hidden md:block">
+<span class="block text-3xl font-display italic text-white/40">"To lead is to listen to the silence."</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section class="mt-32 pt-24 border-t border-white/5">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 <div>
-<h4 class="text-white font-medium text-sm tracking-wide">Marcus Thorne</h4>
-<p class="text-indigo-accent/70 text-[10px] uppercase tracking-widest mt-1 font-semibold">CEO, Aetheric Tech Group</p>
+<h2 class="text-4xl font-display font-light mb-6 text-white">Begin Your Journey</h2>
+<p class="text-slate-400 font-light max-w-md">The path to alignment starts with a single point of inquiry. Let us explore the resonance between your vision and the currents of the unseen.</p>
 </div>
-</div>
-</div>
-</div>
-<div class="card-gradient-2 break-inside-avoid border border-white/5 p-10 rounded-sm relative group hover:border-indigo-accent/30 transition-all duration-700">
-<div class="relative z-10">
-<p class="text-lg text-slate-300 leading-relaxed mb-10 font-light italic">
-<span class="text-white">Strategic Intuition</span> is often dismissed as 'gut feeling'. Through this advisory, I learned to harness it as a rigorous discipline. It has changed how I approach venture capital and personal legacy.
-              </p>
-<div class="flex items-center gap-5">
-<img alt="Portrait" class="w-14 h-14 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 border border-white/10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1WxqTLgPaNKgN80NDYWSO3p3PxBU-ORdu3riWHUupL6eJUZ1-A_IaqLTPnx94ikg1wnZm8cDcYprIZNp8y59ITj3aignCQb_vqz8-lm6ux3kQmWUmdfKHMrkP7KIA3iWT15oB6EkdvAOSURNjPrPQC7-MDnMrxKCct7rz9BmIu42zkbTF4ga4s17QBXn__6-lu7VXhXPUUzzEQZUiIFPd60Us0SbZVvK-gwShGQWYijBBgxCHgwD6nDGIOJDOtRIOWYftyz8kAqY"/>
-<div>
-<h4 class="text-white font-medium text-sm tracking-wide">Dr. Elena Ross</h4>
-<p class="text-indigo-accent/70 text-[10px] uppercase tracking-widest mt-1 font-semibold">Managing Partner, Nexus Ventures</p>
-</div>
-</div>
-</div>
-</div>
-<div class="card-gradient-3 break-inside-avoid border border-white/5 p-10 rounded-sm relative group hover:border-indigo-accent/30 transition-all duration-700">
-<div class="relative z-10">
-<p class="text-lg text-slate-300 leading-relaxed mb-10 font-light italic">
-                A bridge between the boardroom and the inner sanctum. No clichés, no fluff—just deep, grounded transformation that respects the intellect while touching the soul.
-              </p>
-<div class="flex items-center gap-5">
-<img alt="Portrait" class="w-14 h-14 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 border border-white/10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA7iPe6-1sHu-gjCW9_ytRRVWO5sDkRyFt9ySEcsDZyXPkKDRcoUjzGMmlBPZANiClK5kuEFOfTkHgmkcl_AxtfwJWoQSlXh-rwXyJ7wIQIBYV2_94erwOUOWD02Mwf66L1TxYsznsr8zgSHRgX4PCyxIVWiqyvioB-dMBqcLaODqD8sEuCR9Ndj75E9w6tf1BY-2grocWfefMhRt0w2rwO0K6g1ONGcne7osoLxY-ObEfu0qWY0bSrpaijK191rMFhHUVKvNEslw"/>
-<div>
-<h4 class="text-white font-medium text-sm tracking-wide">Julian Vane</h4>
-<p class="text-indigo-accent/70 text-[10px] uppercase tracking-widest mt-1 font-semibold">Creative Director &amp; Philanthropist</p>
-</div>
-</div>
-</div>
-</div>
-<div class="break-inside-avoid bg-indigo-accent/5 border border-indigo-accent/20 p-12 rounded-sm relative group hover:border-indigo-accent/50 transition-all duration-700 shadow-2xl shadow-black/50">
-<div class="absolute inset-0 bg-gradient-to-br from-indigo-accent/10 to-transparent pointer-events-none"></div>
-<div class="relative z-10">
-<span class="material-symbols-outlined text-indigo-accent mb-6 block text-4xl font-extralight">flare</span>
-<p class="text-2xl text-white leading-snug mb-10 font-light italic">
-                "The integration of shadow work into executive coaching changed everything. I am no longer fighting myself; I am leading from a place of wholeness."
-              </p>
-<div class="flex items-center gap-5">
-<img alt="Portrait" class="w-16 h-16 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 border-2 border-indigo-accent/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzgYYqY2KWkgta0icnN-zw4i2NP89JPU0EB9qPTDk-nsw31JgIqd2wIxpwhFr6SsvXUmgBJScGYcnmXLIQJ2B9IVlbXv8OGWHXEkmnJwdA4DRjOznY4QUL8HjBEXifWywCkBJnbtU3qGqpnWtbptR9s9sOcpef9i7I3CfWXpIGRSyGBWnlYQaX1PBg_vUgNoLajoGhIOiMM33TTHTFTyQGGHowOrkPCKiDZ2zsaZ0Iqvq5wT1AUjV48zfMk1hkea16zl5wEccqtdc"/>
-<div>
-<h4 class="text-white font-semibold text-base tracking-wide">Robert Hale</h4>
-<p class="text-indigo-accent text-[11px] uppercase tracking-[0.2em] mt-1 font-bold">Founder, Sovereign Capital</p>
-</div>
-</div>
-</div>
-</div>
-<div class="card-gradient-1 break-inside-avoid border border-white/5 p-10 rounded-sm relative group hover:border-indigo-accent/30 transition-all duration-700">
-<div class="relative z-10">
-<p class="text-lg text-slate-300 leading-relaxed mb-10 font-light italic">
-                I sought clarity for a specific transition and found a lifelong framework for discernment. The Practitioner's ability to ground metaphysical concepts into actionable professional wisdom is unparalleled.
-              </p>
-<div class="flex items-center gap-5">
-<img alt="Portrait" class="w-14 h-14 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 border border-white/10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASBhJtK4hlCPoi6ibkjg3J131mcQNShdjzGQ02MTMKcBG2u3iHnV_5kTperfrbNcZ0YS77o5F1c0tYTbDIFPNN_Q5JkTXCsxqUpkWkFdIikeHAfxXfwUFF4amzznHynDUmFTjkq-AtUHucwR4rs_KkXc01yqHp4LfS-BMWbq2laJYdCPy0xU8-409_h-fW0LgbqlKaqRrCl_FB9nit7R6RVdQOaDSAUzminWZJN0PhNggp6W38pzeLEqDiIvFAk5aPlugV9bfEG5M"/>
-<div>
-<h4 class="text-white font-medium text-sm tracking-wide">Sarah Chen</h4>
-<p class="text-indigo-accent/70 text-[10px] uppercase tracking-widest mt-1 font-semibold">VP of Strategy, BioLogix</p>
-</div>
-</div>
-</div>
-</div>
-<div class="card-gradient-2 break-inside-avoid border border-white/5 p-10 rounded-sm relative group hover:border-indigo-accent/30 transition-all duration-700">
-<div class="relative z-10">
-<p class="text-lg text-slate-300 leading-relaxed mb-10 font-light italic">
-                Her approach to <span class="text-white">Personal Mastery</span> is the most sophisticated I have encountered in twenty years of development work. She helps you find the silence within the noise of a high-growth career.
-              </p>
-<div class="flex items-center gap-5">
-<img alt="Portrait" class="w-14 h-14 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 border border-white/10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxAKiZ4lf5BsdqXrkUGcC_jcspred5Q2vNIRM_Olb3qe_VLvYxG4UIbfOyYlhOXGAxtn4Iz11gZZcXuo1bAxHYo6C4S8hWV9xn5_fAQUkrsI1mR5w7CruSYFX3Df9odlt0FMPz1y0rq-bHmmwuzAPJ4JpSN1rHVmzQA4ATrG2ZhmSrVpcFmk9oOlSAB8At34hHDLo5-5gdG7m1cWtQLBtudoasP87q8DqzBLRjaJ5exurQi-Qbf8IoncCm7FLQdt28aD_-6i7Efyo"/>
-<div>
-<h4 class="text-white font-medium text-sm tracking-wide">Aria Montgomery</h4>
-<p class="text-indigo-accent/70 text-[10px] uppercase tracking-widest mt-1 font-semibold">International Human Rights Attorney</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="relative py-40 px-6 overflow-hidden border-t border-white/5 bg-slate-900/30">
-<div class="absolute inset-0 celestial-mesh opacity-50"></div>
-<div class="relative z-10 max-w-4xl mx-auto text-center">
-<h2 class="text-4xl md:text-6xl font-extralight text-white mb-10 italic">Your transformation awaits.</h2>
-<p class="text-xl text-slate-400 mb-14 max-w-2xl mx-auto font-light leading-relaxed">
-            Serious inquiry only. For those ready to step into their highest expression of leadership and life.
-          </p>
-<div class="flex flex-col sm:row gap-4 justify-center">
-<button class="bg-indigo-accent hover:bg-blue-600 text-white px-12 py-5 rounded-sm text-[11px] font-bold uppercase tracking-[0.3em] transition-all shadow-[0_0_30px_rgba(59,130,246,0.2)]">
-              Apply for Advisory
-            </button>
+<div class="flex justify-start md:justify-end">
+<button class="group flex items-center gap-4 text-xl font-display italic text-silver hover:text-primary transition-colors">
+<span>Schedule an introductory call</span>
+<span class="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_right_alt</span>
+</button>
 </div>
 </div>
 </section>
 </main>
-<footer class="bg-indigo-deep border-t border-white/5 py-24 px-6 md:px-20">
-<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-16">
-<div class="col-span-1 md:col-span-2 space-y-8">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-indigo-accent text-3xl font-extralight">auto_awesome</span>
-<span class="text-lg font-bold tracking-[0.2em] text-white font-sans uppercase">The Practitioner</span>
+<footer class="border-t border-white/5 bg-midnight py-20">
+<div class="max-w-7xl mx-auto px-8 md:px-16">
+<div class="flex flex-col md:flex-row justify-between gap-16 mb-20">
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl">blur_on</span>
+<h2 class="text-xl font-display font-medium tracking-tight text-white">Ethereal Council</h2>
 </div>
-<p class="text-slate-500 max-w-sm font-light leading-relaxed text-sm">
-            High-end spiritual advisory for visionary leaders. Grounded in tradition, ethical by design, transformative in practice.
-          </p>
+<p class="text-slate-500 text-sm max-w-xs leading-relaxed">
+                        A sanctuary for strategic intuition and spiritual guidance. Serving visionaries and leaders globally from a place of deep alignment.
+                    </p>
 </div>
-<div>
-<h5 class="text-white font-semibold mb-8 font-sans text-[10px] tracking-[0.4em] uppercase">Explore</h5>
-<ul class="space-y-4 text-slate-500 text-[11px] tracking-[0.2em] uppercase">
-<li><a class="hover:text-indigo-accent transition-colors" href="index.html">Homes</a></li>
-<li><a class="hover:text-indigo-accent transition-colors" href="services.html">Offerings</a></li>
-</ul>
+<div class="grid grid-cols-2 gap-12 md:gap-24">
+<div class="flex flex-col gap-4">
+<h4 class="text-xs font-bold tracking-widest uppercase text-slate-200">Inquiry</h4>
+<nav class="flex flex-col gap-2">
+<a class="text-slate-500 hover:text-primary text-sm transition-colors" href="index.html">Home</a>
+<a class="text-slate-500 hover:text-primary text-sm transition-colors" href="services.html">Offerings</a>
+<a class="text-slate-500 hover:text-primary text-sm transition-colors" href="portfolio.html">The Gallery</a>
+</nav>
 </div>
-<div>
-<h5 class="text-white font-semibold mb-8 font-sans text-[10px] tracking-[0.4em] uppercase">Connect</h5>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 border-t border-white/5 pt-8">
+<p class="text-slate-600 text-[10px] tracking-[0.2em] uppercase">© 2024 Ethereal Council. All Rights Reserved.</p>
 <div class="flex gap-6">
-<a class="text-slate-500 hover:text-indigo-accent transition-all" href="#">
-<span class="material-symbols-outlined text-xl">alternate_email</span>
-</a>
-<a class="text-slate-500 hover:text-indigo-accent transition-all" href="#">
-<span class="material-symbols-outlined text-xl">public</span>
-</a>
+<a class="text-slate-600 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-xl">share</span></a>
+<a class="text-slate-600 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-xl">blur_circular</span></a>
 </div>
-</div>
-</div>
-<div class="max-w-7xl mx-auto mt-24 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[9px] text-slate-600 uppercase tracking-[0.3em] gap-6">
-<p>© 2024 The Practitioner. All rights reserved.</p>
-<div class="flex gap-10">
-<a class="hover:text-white transition-colors" href="index.html">Home</a>
-<a class="hover:text-white transition-colors" href="services.html">Services</a>
 </div>
 </div>
 </footer>
 </div>
 
-```</body></html>
+</body></html>
