@@ -12,13 +12,17 @@
             theme: {
                 extend: {
                     colors: {
-                        "indigo-deep": "#1a1a3a",
-                        "indigo-vibrant": "#6366f1",
-                        "blue-accent": "#3b82f6",
-                        "blue-light": "#93c5fd",
-                        "slate-custom": "#334155",
-                        "background-dark": "#0f172a",
-                    },
+                  "primary": "#38bdf8",
+                  "accent-blue": "#7dd3fc",
+                  "midnight": "#020617",
+                  "slate-card": "#1e293b",
+                  "silver": "#cbd5e1",
+                  "indigo-950": "#0f172a",
+
+                  /* add these for header consistency */
+                  "indigo-deep": "#1a1a3a",
+                  "silver-light": "#93c5fd",
+                },
                     fontFamily: {
                         "display": ["Newsreader", "serif"],
                         "sans": ["Inter", "system-ui", "sans-serif"]
@@ -45,7 +49,7 @@
 </head>
 <body class="font-display">
 <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden mystical-mesh">
-<header class="fixed top-0 z-50 w-full border-b border-white/5 bg-indigo-deep/80 backdrop-blur-xl px-6 md:px-20 py-5">
+<header class="fixed top-0 z-50 w-full h-[var(--nav-h)] border-b border-white/5 bg-indigo-deep/80 backdrop-blur-xl px-6 md:px-20 py-5">
 <div class="max-w-7xl mx-auto flex items-center justify-between">
 <div class="flex items-center gap-3">
 <div class="text-primary flex items-center justify-center">
@@ -65,7 +69,7 @@
 
 
 </header>
-<main class="flex-1 px-6 md:px-20 pt-32 pb-20 max-w-7xl mx-auto w-full">
+<main class="flex-1 px-6 md:px-20 pt-[calc(var(--nav-h)+24px)] pb-20 max-w-7xl mx-auto w-full">
 <div class="flex flex-col gap-6 mb-20 text-center md:text-left">
 <h1 class="text-white text-5xl md:text-7xl font-display font-bold leading-tight tracking-tight">Offerings &amp; Services</h1>
 <p class="text-blue-light/80 text-xl md:text-2xl font-display italic max-w-3xl leading-relaxed">
