@@ -1,65 +1,92 @@
 <!DOCTYPE html>
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,600;6..72,700;6..72,800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script>
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      extend: {
-        colors: {
-          "indigo-deep": "#1a1a3a",
-          "indigo-vibrant": "#6366f1",
-          "blue-accent": "#3b82f6",
-          "blue-light": "#93c5fd",
-          "slate-custom": "#334155",
-          "background-dark": "#0f172a",
-        },
-        fontFamily: {
-          display: ["Newsreader", "serif"],
-          sans: ["Inter", "system-ui", "sans-serif"],
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sacred Guidance | About Me</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,600;6..72,700;6..72,800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind config BEFORE CDN -->
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#38bdf8",
+            "silver-light": "#93c5fd",
+            "indigo-deep": "#1a1a3a",
+            "background-dark": "#0f172a",
+            "midnight": "#020617",
+          },
+          fontFamily: {
+            display: ["Newsreader", "serif"],
+            sans: ["Inter", "system-ui", "sans-serif"],
+          },
         },
       },
-    },
-  };
-</script>
+    };
+  </script>
 
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 
-<style type="text/tailwindcss">
-  body { font-family: 'Inter', sans-serif; @apply bg-background-dark text-slate-200; }
-  .font-display { font-family: 'Newsreader', serif; }
-  .glass-card { background: rgba(51, 65, 85, 0.4); border: 1px solid rgba(148, 163, 184, 0.2); backdrop-filter: blur(8px); }
-</style>
+  <style type="text/tailwindcss">
+    :root { --nav-h: 96px; }
+
+    body { font-family: 'Inter', sans-serif; @apply bg-midnight text-slate-200; }
+    .font-display { font-family: 'Newsreader', serif; }
+
+    .glass-card { background: rgba(51, 65, 85, 0.4); border: 1px solid rgba(148, 163, 184, 0.2); backdrop-filter: blur(8px); }
+
+    .bg-mesh {
+      background-color: #020617;
+      background-image:
+        radial-gradient(at 0% 0%, rgba(30, 41, 59, 0.5) 0, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(15, 23, 42, 0.5) 0, transparent 50%);
+    }
+
+    .text-gradient {
+      background: linear-gradient(to right, #94a3b8, #e2e8f0, #7dd3fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .card-overlay {
+      background: linear-gradient(to top, rgba(2, 6, 23, 0.98) 0%, rgba(2, 6, 23, 0.6) 60%, rgba(2, 6, 23, 0.2) 100%);
+    }
+  </style>
 </head>
-<body class="font-display">
-<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden mystical-mesh">
-<header class="fixed top-0 z-50 w-full h-[var(--nav-h)] border-b border-white/5 bg-indigo-deep/80 backdrop-blur-xl px-6 md:px-20 py-5">
-<div class="max-w-7xl mx-auto flex items-center justify-between">
-<div class="flex items-center gap-3">
-<div class="text-primary flex items-center justify-center">
-<span class="material-symbols-outlined text-3xl font-extralight">flare</span>
-</div>
-<h2 class="text-xl font-medium tracking-widest text-white uppercase">Sacred Guidance</h2>
-</div>
-<nav class="hidden md:flex items-center gap-12">
-<a class="text-silver-light/70 hover:text-white transition-colors text-xs font-semibold tracking-widest uppercase" href="index.html">Home</a>
-<a class="text-silver-light/70 hover:text-white transition-colors text-xs font-semibold tracking-widest uppercase" href="aboutme.html">About Me</a>
-<a class="text-silver-light/70 hover:text-white transition-colors text-xs font-semibold tracking-widest uppercase" href="testimonials.html">Testimonials</a>
-</nav>
-<button class="border border-silver-light/20 hover:bg-white hover:text-indigo-deep text-silver-light
-px-4 py-2 text-[10px] tracking-[0.18em] md:px-7 md:py-2 md:text-xs md:tracking-widest
-uppercase font-bold transition-all duration-300 whitespace-nowrap">
-  Book a Consultation
-</button>
-</div>
 
+<body class="font-display bg-mesh">
+  <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
 
-</header>
+    <header class="fixed top-0 z-50 w-full h-[var(--nav-h)] border-b border-white/5 bg-indigo-deep/80 backdrop-blur-xl px-6 md:px-20 py-5">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="text-primary flex items-center justify-center">
+            <span class="material-symbols-outlined text-3xl font-extralight">flare</span>
+          </div>
+          <h2 class="text-xl font-medium tracking-widest text-white uppercase">Sacred Guidance</h2>
+        </div>
+
+        <nav class="hidden md:flex items-center gap-12">
+          <a class="text-silver-light/70 hover:text-white transition-colors text-xs font-semibold tracking-widest uppercase" href="aboutme.html">About Me</a>
+          <a class="text-silver-light/70 hover:text-white transition-colors text-xs font-semibold tracking-widest uppercase" href="index.html">Home</a>
+          <a class="text-silver-light/70 hover:text-white transition-colors text-xs font-semibold tracking-widest uppercase" href="testimonials.html">Testimonials</a>
+        </nav>
+
+        <button class="border border-silver-light/20 hover:bg-white hover:text-indigo-deep text-silver-light
+          px-4 py-2 text-[10px] tracking-[0.18em] md:px-7 md:py-2 md:text-xs md:tracking-widest
+          uppercase font-bold transition-all duration-300 whitespace-nowrap">
+          Book a Consultation
+        </button>
+      </div>
+    </header>
 <main class="flex-1 px-6 md:px-20 pt-[calc(var(--nav-h)+24px)] pb-20 max-w-7xl mx-auto w-full">
 <div class="flex flex-col gap-6 mb-20 text-center md:text-left">
 <h1 class="text-white text-5xl md:text-7xl font-display font-bold leading-tight tracking-tight">Offerings &amp; Services</h1>
