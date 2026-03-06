@@ -51,9 +51,86 @@
     .card-overlay {
       background: linear-gradient(to top, rgba(2, 6, 23, 0.98) 0%, rgba(2, 6, 23, 0.6) 60%, rgba(2, 6, 23, 0.2) 100%);
     }
+    /* Soft scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 700ms ease, transform 700ms ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* Subtle card glow */
+.pretty-card {
+  position: relative;
+  overflow: hidden;
+}
+.pretty-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(125, 211, 252, 0.10), transparent 45%);
+  opacity: 0;
+  transition: opacity 500ms ease;
+  pointer-events: none;
+}
+.pretty-card:hover::before,
+.pretty-card:focus-within::before {
+  opacity: 1;
+}
+
+/* Hero accent glow */
+.hero-glow {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(59,130,246,0.16) 0%, rgba(59,130,246,0.06) 35%, transparent 70%);
+  filter: blur(30px);
+  pointer-events: none;
+}
+
+/* CTA shimmer */
+.cta-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 20%, rgba(255,255,255,0.05) 50%, transparent 80%);
+  transform: translateX(-120%);
+  transition: transform 900ms ease;
+  pointer-events: none;
+}
+.cta-panel:hover::before {
+  transform: translateX(120%);
+}
   </style>
 </head>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const items = document.querySelectorAll('.reveal');
 
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    items.forEach((item) => observer.observe(item));
+  });
+</script>
 <body class="font-display bg-[#020617] text-slate-200">
   <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden bg-mesh">
 
@@ -79,7 +156,8 @@
     </header>
 
     <main class="flex-1 px-6 md:px-20 pt-32 pb-20 max-w-7xl mx-auto w-full">
-      <div class="flex flex-col gap-6 mb-20 text-center md:text-left">
+      <div class="relative flex flex-col gap-6 mb-20 text-center md:text-left reveal">
+  <div class="hero-glow top-[-100px] left-[-80px] hidden md:block"></div>
         <h1 class="text-white text-5xl md:text-7xl font-display font-bold leading-tight tracking-tight">Offerings &amp; Services</h1>
         <p class="text-sky-300/80 text-xl md:text-2xl font-display italic max-w-3xl leading-relaxed">
           Elevated spiritual guidance and strategic intuition tailored for the modern conscious leader.
@@ -88,7 +166,7 @@
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
-        <div class="group flex flex-col glass-card rounded-2xl overflow-hidden transition-all duration-500 hover:border-sky-300/40 hover:-translate-y-2">
+        <div class="group pretty-card reveal flex flex-col glass-card rounded-2xl overflow-hidden transition-all duration-500 hover:border-sky-300/40 hover:-translate-y-2">
           <div class="relative w-full aspect-[16/10] overflow-hidden">
             <img alt="Ethereal smoke and light" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-all duration-1000 scale-105 group-hover:scale-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwRZy7jJoZqMStHistd1Ap7bXceSPviISna6pjZ900sp3Rsax8sAQi7vDQ8DbsOXAYYp0a9S-qEb-kSibwBnUzDVcSZwCQ7gFH8WAI2as4k5vkYKr1j78rfoylhh5slXUovN6UZIrL_qeRmkuRxeZoaCyu0lAVEm5y9-z3nDrliBHRcp-NOxWv7oczOzAdmXEzNMkIfecdzOJ-L3jzw0dXWqz9QisLN-TFm6zjPHNODVkzT6tFS_admwWFOzS3HLAvYLIpmlcQ9Hw"/>
             <div class="absolute inset-0 bg-gradient-to-t from-slate-card via-transparent to-transparent"></div>
@@ -108,7 +186,7 @@
           </div>
         </div>
 
-        <div class="group flex flex-col glass-card rounded-2xl overflow-hidden transition-all duration-500 hover:border-sky-300/40 hover:-translate-y-2">
+       <div class="group pretty-card reveal flex flex-col glass-card rounded-2xl overflow-hidden transition-all duration-500 hover:border-sky-300/40 hover:-translate-y-2">
           <div class="relative w-full aspect-[16/10] overflow-hidden">
             <img alt="Celestial alignment" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-all duration-1000 scale-105 group-hover:scale-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSM3Blq_SCduajYkKcXGbaJfuqDH0DVL2aazezbKWAoCCFwhV2i5MKLk47KY_vGVJrxB705a6Ih9--Ebw8i6DHte1ps8yhrNWebwRq6iNuUYWFLP7LEOOEbObP7eMMiWgJ1P99QvUSbUA_Uxy1PsXoIUPF6u5rWvqvqUS1C2jdTReJF4H5UabBrj66QLI0i5v9b-supO8RTgGKJLy88CJD54DdbkxLMwQCAUawgFfq65oC0gA9dvI02zXx8WimBBkT4jPjM4jjwRc"/>
             <div class="absolute inset-0 bg-gradient-to-t from-slate-card via-transparent to-transparent"></div>
@@ -128,7 +206,7 @@
           </div>
         </div>
 
-        <div class="group flex flex-col glass-card rounded-2xl overflow-hidden transition-all duration-500 hover:border-sky-300/40 hover:-translate-y-2">
+        <div class="group pretty-card reveal flex flex-col glass-card rounded-2xl overflow-hidden transition-all duration-500 hover:border-sky-300/40 hover:-translate-y-2">
           <div class="relative w-full aspect-[16/10] overflow-hidden">
             <img alt="Sacred geometry" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-all duration-1000 scale-105 group-hover:scale-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBejKl9L3r14-zqGSgrh4J3MHv9iXf2Kgc4KqttX7xCXg-mqM45ZW01NFVMXBjjVLqJqCY89ucKF5PVWFgUgHR_1VTQ63AVA9pT3PVt5O5hO50pAUGzZtjmM2cVI5LaFXTrUmoEUZ1IsdJtkTQgCHggxE_gqD27csY7GONw0GGQyPqfDz4d-XrNv29j44UnNZFB6kto1U0OpiyfQfqL9J--GvRxFniLdsf3ezkbQxpZayubLrQ3dVdH11m31u7_ZKgVjk1xeWQsUYs"/>
             <div class="absolute inset-0 bg-gradient-to-t from-slate-card via-transparent to-transparent"></div>
