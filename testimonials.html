@@ -1,53 +1,42 @@
-<html class="dark" lang="en"><head>
+<html class="dark"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Voices of Transformation | Testimonials</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
     tailwind.config = {
       darkMode: "class",
       theme: {
         extend: {
           colors: {
-            "indigo-deep": "#070b14",
-            "indigo-accent": "#3b82f6",
-            "slate-glass": "#1e293b",
-            "blue-mystic": "#1e3a8a",
+            "primary": "#2e4a8c",      // Sophisticated rich blue
+            "indigo-deep": "#0f111d",   // Deepest indigo for background
+            "indigo-rich": "#1a1f35",   // Rich mid-indigo for sections
+            "slate-gray": "#334155",    // Sophisticated slate gray
+            "silver-light": "#e2e8f0",  // Crisp light silver typography
+            "accent-cool": "#94a3b8",   // Muted silver-blue accent
           },
           fontFamily: {
-            "display": ["Newsreader", "serif"],
-            "sans": ["Inter", "sans-serif"]
+            "display": ["Newsreader", "serif"]
           },
+          borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "9999px"},
         },
       },
     }
   </script>
 <style type="text/tailwindcss">
-    @layer base {
-      body {
-        @apply bg-indigo-deep text-slate-200 font-sans selection:bg-indigo-accent/30;
-      }
-      h1, h2, h3, h4, blockquote {
-        @apply font-display;
-      }
+  @layer base {
+    body {
+      @apply bg-indigo-deep text-silver-light selection:bg-primary/40;
     }
-    .celestial-mesh {
-      background: radial-gradient(circle at 20% 30%, rgba(59, 130, 246, 0.08) 0%, transparent 50%),
-                  radial-gradient(circle at 80% 70%, rgba(30, 58, 138, 0.12) 0%, transparent 50%);
-    }
-    .card-gradient-1 {
-      background: linear-gradient(145deg, rgba(30, 41, 59, 0.4) 0%, rgba(15, 23, 42, 0.7) 100%);
-    }
-    .card-gradient-2 {
-      background: linear-gradient(145deg, rgba(30, 58, 138, 0.2) 0%, rgba(7, 11, 20, 0.6) 100%);
-    }
-    .card-gradient-3 {
-      background: linear-gradient(145deg, rgba(15, 23, 42, 0.6) 0%, rgba(30, 41, 59, 0.3) 100%);
-    }
-  </style>
+  }
+  .mystical-mesh {
+    background-image: radial-gradient(at 0% 0%, rgba(46, 74, 140, 0.15) 0px, transparent 50%),
+                      radial-gradient(at 100% 0%, rgba(30, 41, 59, 0.2) 0px, transparent 50%),
+                      radial-gradient(at 100% 100%, rgba(15, 17, 29, 0.1) 0px, transparent 50%),
+                      radial-gradient(at 0% 100%, rgba(46, 74, 140, 0.1) 0px, transparent 50%);
+  }
 </style>
 </head>
 <body class="font-display">
